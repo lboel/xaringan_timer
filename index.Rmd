@@ -50,5 +50,5 @@ to your YAML front matter:
 output:
   xaringan::moon_reader:
     includes:
-      after_body: timer.html
+      after_body: https://raw.githubusercontent.com/jvcasillas/xaringan_timer/master/timer.html
 ```
