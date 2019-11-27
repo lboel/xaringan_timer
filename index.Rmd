@@ -1,0 +1,54 @@
+---
+title: "Presentation Ninja"
+subtitle: "Adding a timer to xaringan slides"
+author: "Joseph V. Casillas"
+institute: "Rutgers University"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ["rutgers", "rutgers-fonts"]
+    nature:
+      ratio: "16:9"
+    includes:
+      after_body: timer.html
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+# Check out this timer
+
+- The timer is setup to be centered on the bottom of the screen when in 
+fullscreen mode
+
+- Type "f" to check it out
+
+---
+
+# How it works
+
+- I use the `countdown` package to create the timer in a separate HTML
+document<sup>1</sup>
+
+- I then import the timer in the YAML front matter of my xaringan slides
+
+- The time is set to countdown from 20 minutes, the typical duration of an 
+academic presentation in my field
+
+.footnote[<sup>1</sup> More info here: https://github.com/gadenbuie/countdown/issues/14]
+
+---
+
+# Try it
+
+- To include the timer in your `xaringan` presentations add the following 
+to your YAML front matter: 
+
+```yaml
+output:
+  xaringan::moon_reader:
+    includes:
+      after_body: timer.html
+```
