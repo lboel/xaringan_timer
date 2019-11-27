@@ -2,4 +2,4 @@
 
 Add a countdown timer to xaringan presentations
 
-Test slides [here](www.jvcasillas.com/xaringan_timer)
+Test slides [here](https://www.jvcasillas.com/xaringan_timer)
